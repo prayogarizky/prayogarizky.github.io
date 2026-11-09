@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Profil pribadi Prayoga Rizky Heryono, mahasiswa Universitas Pamulang.">
+  <title>Prayoga Rizky Heryono | Profil Pribadi</title>
+  <style>
+    :root {
+      --bg:#0b1020; --panel:rgba(255,255,255,.065); --line:rgba(255,255,255,.14);
+      --text:#f5f6fb; --muted:#b5bdd0; --accent:#a99aff; --accent2:#68dfcf;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;color:var(--text);line-height:1.7;
+      font-family:Inter,Arial,Helvetica,sans-serif;
+      background:radial-gradient(ellipse at 12% 8%,rgba(117,92,255,.2),transparent 34rem),
+      radial-gradient(ellipse at 88% 38%,rgba(48,202,185,.12),transparent 30rem),var(--bg);
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1060px,calc(100% - 40px));margin:auto}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0}
+    .brand{font-weight:800;letter-spacing:.09em;font-size:.9rem}
+    .brand span{color:var(--accent2)}
+    .navlinks{display:flex;gap:23px;color:var(--muted);font-size:.9rem}
+    .navlinks a:hover{color:#fff}
+    .hero{min-height:72vh;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:48px;padding:60px 0 75px}
+    .eyebrow{color:var(--accent2);text-transform:uppercase;letter-spacing:.17em;font-size:.74rem;font-weight:700}
+    h1{font-size:clamp(2.8rem,7vw,5.8rem);line-height:1.02;letter-spacing:-.06em;margin:17px 0 22px}
+    h1 em{font-style:normal;color:var(--accent)}
+    .intro{color:var(--muted);font-size:1.06rem;max-width:590px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:11px 18px;border-radius:999px;border:1px solid var(--line);font-weight:700;font-size:.9rem}
+    .primary{background:linear-gradient(110deg,var(--accent2),#c2f4df);color:#0b1020;border:0}
+    .portrait{min-height:350px;border:1px solid var(--line);border-radius:28px;padding:18px;background:linear-gradient(145deg,rgba(155,140,255,.18),rgba(84,214,200,.08));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+    .portrait:before,.portrait:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.14);border-radius:50%}
+    .portrait:before{width:280px;height:280px}.portrait:after{width:370px;height:370px}
+    .avatar{width:175px;height:175px;border-radius:50%;display:grid;place-items:center;z-index:1;background:linear-gradient(145deg,#a99cff,#58d7c8);color:#101629;font-size:3.4rem;font-weight:900;box-shadow:0 25px 80px #0008}
+    .floating{position:absolute;z-index:2;padding:9px 13px;background:#171e32;border:1px solid var(--line);border-radius:13px;font-size:.8rem}
+    .f1{top:35px;left:18px}.f2{bottom:35px;right:15px}
+    section{padding:62px 0}
+    .section-head{margin-bottom:25px}
+    h2{font-size:clamp(1.9rem,4vw,2.8rem);letter-spacing:-.045em;margin:5px 0}
+    .sub{color:var(--muted);max-width:690px}
+    .about{display:grid;grid-template-columns:.75fr 1.25fr;gap:25px;align-items:start}
+    .quote{font-size:1.45rem;line-height:1.4;letter-spacing:-.025em}
+    .card{padding:23px;border:1px solid var(--line);border-radius:21px;background:var(--panel);backdrop-filter:blur(12px)}
+    .card p{color:var(--muted);margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+    .icon{font-size:1.45rem}
+    .card h3{margin:10px 0 6px;font-size:1.08rem}
+    .card .desc{color:var(--muted);font-size:.92rem}
+    .timeline{border-left:1px solid var(--line);padding-left:22px}
+    .timeline-item{position:relative;padding:0 0 22px}
+    .timeline-item:last-child{padding-bottom:0}
+    .timeline-item:before{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:var(--accent2);left:-27px;top:9px}
+    .timeline-item p{margin:4px 0 0;color:var(--muted)}
+    .contact{text-align:center;padding:44px 22px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(120deg,rgba(155,140,255,.15),rgba(84,214,200,.1))}
+    .contact .sub{margin:0 auto 20px}
+    footer{color:var(--muted);padding:27px 0 38px;font-size:.84rem;display:flex;justify-content:space-between;gap:12px}
+    @media(max-width:760px){
+      .navlinks{gap:12px;font-size:.8rem}.hero{grid-template-columns:1fr;padding-top:35px;gap:25px}
+      .portrait{min-height:280px}.avatar{width:145px;height:145px;font-size:2.8rem}
+      .grid{grid-template-columns:1fr}.about{grid-template-columns:1fr}footer{flex-direction:column}
+    }
+@media(max-width:430px){
+  .navlinks a:nth-child(4){display:none}
+  .wrap{width:calc(100% - 28px)}
+}  </style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="#beranda">Prayoga Rizky Heryono<span>.</span></a>
+    <div class="navlinks">
+<a href="#profil">Profil</a>
+<a href="#pendidikan">Pendidikan</a>
+<a href="#pengalaman">Pengalaman</a>
+<a href="#minat">Minat</a>
+<a href="#kontak">Kontak</a>
+    </div>
+  </nav>
+
+  <main>
+      <div>
+        <div class="eyebrow">Website Profil Pribadi</div>
+        <h1>Halo, saya<br><em>Prayoga Rizky Heryono.</em></h1>
+        <p class="intro">Selamat datang di website profil pribadi saya. Website ini dibuat sebagai media perkenalan diri, penyampaian informasi mengenai latar belakang pendidikan, serta gambaran minat dan aktivitas yang saya sukai.</p>
+        <div class="actions">
+          <a class="btn primary" href="#profil">Mengenal Saya ↗</a>
+          <a class="btn" href="#kontak">Hubungi Saya</a>
+          
+
+
+                  
+    <section id="profil">
+      <div class="section-head">
+        <div class="eyebrow">01 / Profil</div>
+        <h2>Tentang Saya</h2>
+      </div>
+      <div class="about">
+        <div class="quote">“Belajar merupakan proses berkelanjutan untuk mengembangkan pengetahuan dan kemampuan diri.”</div>
+        <div class="card">
+          <p>Perkenalkan, nama saya Prayoga Rizky Heryono. Saya merupakan mahasiswa Program Studi S1 Manajemen di Universitas Pamulang. Saya memiliki ketertarikan untuk mempelajari berbagai bidang, khususnya yang berkaitan dengan manajemen, bisnis, dan perkembangan teknologi. Melalui kegiatan perkuliahan maupun aktivitas sehari-hari, saya berusaha menambah wawasan, mengembangkan kemampuan, serta memperoleh pengalaman baru.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pendidikan">
+      <div class="section-head">
+        <div class="eyebrow">02 / Pendidikan</div>
+        <h2>Riwayat Pendidikan</h2>
+        <p class="sub">Informasi pendidikan yang sedang saya tempuh.</p>
+      </div>
+      
+<div class="card timeline">
+  <div class="timeline-item">
+    <strong>Universitas Pamulang</strong>
+    <p>Program Studi S1 Manajemen</p>
+    <p>2025-Sekarang</p>
+    <p>Jenjang pendidikan: Strata 1 (S1)</p>
+  </div>
+
+  <div class="timeline-item">
+    <strong>SMA Negeri 6 Tangerang Selatan</strong>
+    <p>2022-2025</p>
+    <p>Jenjang pendidikan: Sekolah Menengah Atas (SMA)</p>
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+
+<section id="pengalaman">
+  <div class="section-head">
+    <div class="eyebrow">03 / Pengalaman</div>
+    <h2>Pengalaman Event Organizer</h2>
+    <p class="sub">Pengalaman dalam mendukung persiapan, koordinasi, dan pelaksanaan berbagai kegiatan.</p>
+  </div>
+
+  <div class="grid">
+    <article class="card">
+      <div class="icon">🎤</div>
+      <h3>6ixscup</h3>
+      <p class="desc"><strong>Divisi Acara | 2024</strong></p>
+      <p class="desc">Berpartisipasi dalam divisi acara pada kegiatan yang menggabungkan pertunjukan musik dan berbagai perlombaan. Mendukung persiapan serta pelaksanaan rangkaian acara bersama tim.</p>
+ <a href="https://www.instagram.com/6ixscup/" target="_blank" class="social-link">
+  @6ixscup ↗
+ </a>
+    </article>
+
+    <article class="card">
+      <div class="icon">🎚️</div>
+      <h3>Edisi Libur Ngampus (ELING)</h3>
+      <p class="desc"><strong>Divisi Produksi | 2026–Sekarang</strong></p>
+      <p class="desc">Terlibat aktif dalam persiapan dan pelaksanaan produksi acara musik, termasuk menyiapkan kebutuhan tata suara (sound system), panggung (stage), lokasi kegiatan, serta kebutuhan teknis dan operasional lainnya untuk mendukung kelancaran acara.</p>
+  <a href="https://www.instagram.com/eling.district/" target="_blank" class="social-link">
+  @eling.district ↗
+  </a>
+    </article>
+  </div>
+</section>
+
+    <section id="minat">
+      <div class="section-head">
+        <div class="eyebrow">04 / Minat dan Kegemaran</div>
+        <h2>Hal yang Saya Sukai</h2>
+        <p class="sub">Beberapa bidang yang menjadi minat dan kegiatan saya di waktu luang.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+  <div class="icon">🎧</div>
+  <h3>Musik</h3>
+  <p class="desc">Saya memiliki ketertarikan terhadap musik dan pertunjukan musik, serta menikmati berbagai genre musik dalam aktivitas sehari-hari.</p>
+        </article>
+        <article class="card"><div class="icon">💻</div><h3>Teknologi</h3><p class="desc">Saya tertarik mengikuti perkembangan teknologi, perangkat digital, serta pemanfaatannya dalam kehidupan sehari-hari.</p></article>
+        <article class="card"><div class="icon">⚽</div><h3>Olahraga dan Permainan</h3><p class="desc">Saya memiliki ketertarikan pada sepak bola dan permainan strategi, termasuk permainan simulasi manajemen tim.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="eyebrow">05 / Pengembangan Diri</div>
+        <h2>Tujuan dan Harapan</h2>
+      </div>
+      <div class="card">
+        <p>Saya berharap dapat terus meningkatkan pengetahuan dan keterampilan, baik melalui pendidikan formal maupun pengalaman di luar perkuliahan. Saya juga ingin memperluas wawasan di bidang manajemen dan bisnis agar dapat mempersiapkan diri menghadapi tantangan di masa mendatang.</p>
+      </div>
+    </section>
+
+    <section id="kontak">
+      <div class="contact">
+        <div class="eyebrow">06 / Kontak</div>
+        <h2>Terhubung dengan Saya</h2>
+        <p class="sub">Untuk keperluan komunikasi atau informasi lebih lanjut, silakan menghubungi saya melalui alamat email berikut.</p>
+
+<div class="actions" style="justify-content:center">
+  <a class="btn primary"
+     href="mailto:prayogarizky040@gmail.com">
+    Email ↗
+  </a>
+
+  <a class="btn"
+     href="https://www.instagram.com/yogaaaaaaa_11/"
+     target="_blank"
+     rel="noopener noreferrer">
+    Instagram ↗
+  </a>
+</div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Prayoga Rizky Heryono</span><span>Website Profil Pribadi</span></footer>
+</div>
+</body>
+</html>
